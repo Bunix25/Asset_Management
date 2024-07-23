@@ -1,0 +1,102 @@
+<!-- templates/add_asset.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Asset</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Add Asset</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Asset Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view">View Assets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <form action="/add" method="post">
+            <div class="form-group">
+                <label for="asset_id">Asset ID:</label>
+                <input type="text" class="form-control" id="asset_id" name="asset_id" required>
+            </div>
+            <div class="form-group">
+                <label for="asset_type">Asset Type:</label>
+                <input type="text" class="form-control" id="asset_type" name="asset_type" required>
+            </div>
+            <div class="form-group">
+                <label for="asset_name">Asset Name:</label>
+                <input type="text" class="form-control" id="asset_name" name="asset_name" required>
+            </div>
+            <div class="form-group">
+                <label for="owner">Owner:</label>
+                <input type="text" class="form-control" id="owner" name="owner" required>
+            </div>
+            <div class="form-group">
+                <label for="academic_department">Academic Department:</label>
+                <input type="text" class="form-control" id="academic_department" name="academic_department" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" class="form-control" id="manufacturer" name="manufacturer" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text" class="form-control" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="serial_number">Serial Number:</label>
+                <input type="text" class="form-control" id="serial_number" name="serial_number" required>
+            </div>
+            <div class="form-group">
+                <label for="purchase_date">Purchase Date:</label>
+                <input type="date" class="form-control" id="purchase_date" name="purchase_date" required>
+            </div>
+            <div class="form-group">
+                <label for="warranty_expiry">Warranty Expiry:</label>
+                <input type="date" class="form-control" id="warranty_expiry" name="warranty_expiry" required>
+            </div>
+            <div class="form-group">
+                <label for="os">Operating System:</label>
+                <input type="text" class="form-control" id="os" name="os" required>
+            </div>
+            <div class="form-group">
+                <label for="cpu">CPU:</label>
+                <input type="text" class="form-control" id="cpu" name="cpu" required>
+            </div>
+            <div class="form-group">
+                <label for="ram">RAM:</label>
+                <input type="text" class="form-control" id="ram" name="ram" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Add Asset</button>
+        </form>
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

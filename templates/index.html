@@ -4,24 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
+    <title>Asset Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Expense Tracker</h1>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Asset Management</h1>
     </header>
-    <nav>
-        <a href="/add">Add Expense</a>
-        <a href="/view">View Expenses</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Asset Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add">Add Asset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/view">View Assets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="container">
-        <h2>Welcome to the Expense Tracker</h2>
-        <p>Use this application to track your expenses effectively.</p>
+    <div class="container mt-5">
+        <h2>Welcome to the Asset Management Tool</h2>
+        <p>Use this application to manage your assets effectively.</p>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Expense Tracker</p>
+    <footer class="footer bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Asset Management</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

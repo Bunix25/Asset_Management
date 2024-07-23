@@ -1,4 +1,23 @@
 001,Computer,slava_comp,slava,RAE,Ottawa,TYHGF,008845-or,YHSG-SJSTD-SJHS-SHSDG-736SH,2023-03-15,2024-07-15,MAC,M1,8 GB
-002,Computer,slava22_comp,slava22,RAEed,Ottawa,TYHGFwq,008845-orwass,YHSG-SJSTD-SJHS-SHSDG-736SHaa,2024-07-24,2024-07-09,MAC,M11,8 GBs
 0022,Computer,slava2243_comp,slava111,RAE1,Ottawa,TYHGF111,008845-or11,YHSG-SJSTD-SJHS-SHSDG-736SH11,2024-07-04,2024-07-22,MAC,M1,8 GB
 00133,Computer,slava_comp33,slava33,RAE33,Ottawa,TYHGF33,008845-or33,YHSG-SJSTD-SJHS-SHSDG-736SH33,2024-07-01,2026-10-21,MAC,M1,8 GBs33
+0021,Computer,alex_comp,alex,CS,Ottawa,Dell,Inspiron-15,123456789,2023-03-15,2024-07-15,Windows,Intel i5,8 GB
+0012,Computer,jane_laptop,jane,Math,Toronto,HP,Envy-13,987654321,2024-07-24,2025-07-09,Windows,Intel i7,16 GB
+003,Tablet,mike_tablet,mike,Biology,Montreal,Apple,iPad-Pro,111213141,2024-08-15,2025-08-15,iOS,A12,4 GB
+004,Computer,lucas_pc,lucas,Physics,Vancouver,Asus,VivoBook,151617181,2023-11-20,2024-11-20,Windows,AMD Ryzen 5,8 GB
+005,Laptop,emma_laptop,emma,Chemistry,Calgary,Lenovo,ThinkPad-X1,192021222,2023-06-10,2024-06-10,Windows,Intel i5,8 GB
+006,Tablet,olivia_tablet,olivia,History,Edmonton,Samsung,Galaxy-Tab-S7,232425262,2024-05-01,2025-05-01,Android,Exynos 990,6 GB
+007,Computer,liam_desktop,liam,Geography,Ottawa,HP,Omen-30L,272829303,2024-09-30,2025-09-30,Windows,Intel i9,32 GB
+008,Computer,noah_pc,noah,Economics,Winnipeg,Dell,XPS-13,313233343,2024-01-25,2025-01-25,Windows,Intel i7,16 GB
+009,Laptop,ava_laptop,ava,Engineering,Halifax,Acer,Swift-3,353637383,2023-12-15,2024-12-15,Windows,AMD Ryzen 7,8 GB
+010,Tablet,william_tablet,william,Art,Victoria,Apple,iPad-Air,394041424,2024-03-05,2025-03-05,iOS,A14,4 GB
+010,Smartphone,sam_phone,sam,Math,Calgary,Samsung,Galaxy-S20,121212121,2023-04-01,2024-04-01,Android,Exynos 990,8 GB
+011,Computer,rita_pc,rita,History,Edmonton,HP,Pavilion-15,232323232,2023-02-12,2024-02-12,Windows,Intel i5,8 GB
+012,Laptop,john_laptop,john,Chemistry,Vancouver,Lenovo,Yoga-920,343434343,2024-06-15,2025-06-15,Windows,Intel i7,16 GB
+013,Tablet,anna_tablet,anna,Biology,Montreal,Apple,iPad-Mini,454545454,2023-07-20,2024-07-20,iOS,A14,4 GB
+014,Computer,mark_desktop,mark,Physics,Toronto,Asus,ROG-Strix,565656565,2023-09-18,2024-09-18,Windows,AMD Ryzen 7,32 GB
+015,Smartphone,lucy_phone,lucy,Economics,Ottawa,Apple,iPhone-12,676767676,2023-10-22,2024-10-22,iOS,A14,4 GB
+016,Computer,nick_pc,nick,CS,Halifax,Dell,Alienware,787878787,2024-01-05,2025-01-05,Windows,Intel i9,64 GB
+017,Laptop,zoe_laptop,zoe,Art,Victoria,Acer,Aspire-5,898989898,2023-03-30,2024-03-30,Windows,AMD Ryzen 5,8 GB
+018,Tablet,liam_tablet,liam,Geography,Winnipeg,Samsung,Galaxy-Tab-S6,909090909,2024-02-28,2025-02-28,Android,Exynos 9820,6 GB
+019,Smartphone,oliver_phone,oliver,Engineering,Ottawa,Google,Pixel-5,101010101,2023-08-11,2024-08-11,Android,Snapdragon 765G,8 GB

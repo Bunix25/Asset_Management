@@ -8,6 +8,28 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .table-responsive {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        thead th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: #007bff !important; /* Blue background color */
+            color: white;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
 <body>
     <header class="bg-primary text-white text-center py-4">
@@ -32,61 +54,78 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search by Asset Name or Owner...">
+        <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search...">
         <div class="table-responsive">
-            <table class="table table-striped table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Asset ID</th>
-                        <th>Asset Type</th>
-                        <th>Asset Name</th>
-                        <th>Owner</th>
-                        <th>Academic Department</th>
-                        <th>Location</th>
-                        <th>Manufacturer</th>
-                        <th>Model</th>
-                        <th>Serial Number</th>
-                        <th>Purchase Date</th>
-                        <th>Warranty Expiry</th>
-                        <th>OS</th>
-                        <th>CPU</th>
-                        <th>RAM</th>
-                    </tr>
-                </thead>
-                <tbody id="assetsTable">
-                    {% for asset in assets %}
-                    <tr>
-                        <td>{{ asset[0] }}</td>
-                        <td>{{ asset[1] }}</td>
-                        <td>{{ asset[2] }}</td>
-                        <td>{{ asset[3] }}</td>
-                        <td>{{ asset[4] }}</td>
-                        <td>{{ asset[5] }}</td>
-                        <td>{{ asset[6] }}</td>
-                        <td>{{ asset[7] }}</td>
-                        <td>{{ asset[8] }}</td>
-                        <td>{{ asset[9] }}</td>
-                        <td>{{ asset[10] }}</td>
-                        <td>{{ asset[11] }}</td>
-                        <td>{{ asset[12] }}</td>
-                        <td>{{ asset[13] }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <form id="deleteForm" method="post" action="/delete">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>Asset ID</th>
+                            <th>Asset Type</th>
+                            <th>Asset Name</th>
+                            <th>Owner</th>
+                            <th>Academic Department</th>
+                            <th>Location</th>
+                            <th>Manufacturer</th>
+                            <th>Model</th>
+                            <th>Serial Number</th>
+                            <th>Purchase Date</th>
+                            <th>Warranty Expiry</th>
+                            <th>OS</th>
+                            <th>CPU</th>
+                            <th>RAM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="assetsTable">
+                        {% for asset in assets %}
+                        <tr>
+                            <td><input type="checkbox" name="delete" value="{{ asset[0] }}"></td>
+                            <td>{{ asset[0] }}</td>
+                            <td>{{ asset[1] }}</td>
+                            <td>{{ asset[2] }}</td>
+                            <td>{{ asset[3] }}</td>
+                            <td>{{ asset[4] }}</td>
+                            <td>{{ asset[5] }}</td>
+                            <td>{{ asset[6] }}</td>
+                            <td>{{ asset[7] }}</td>
+                            <td>{{ asset[8] }}</td>
+                            <td>{{ asset[9] }}</td>
+                            <td>{{ asset[10] }}</td>
+                            <td>{{ asset[11] }}</td>
+                            <td>{{ asset[12] }}</td>
+                            <td>{{ asset[13] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-danger mt-3">Delete Selected</button>
+            </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        document.getElementById('selectAll').addEventListener('change', function() {
+            var checkboxes = document.querySelectorAll('#assetsTable input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+            });
+        });
+
         document.getElementById('searchInput').addEventListener('keyup', function() {
             var searchValue = this.value.toLowerCase();
             var rows = document.querySelectorAll('#assetsTable tr');
             rows.forEach(function(row) {
-                var assetName = row.cells[2].innerText.toLowerCase();
-                var owner = row.cells[3].innerText.toLowerCase();
-                var match = assetName.indexOf(searchValue) !== -1 || owner.indexOf(searchValue) !== -1;
+                var cells = row.getElementsByTagName('td');
+                var match = false;
+                for (var i = 1; i < cells.length; i++) { // Skip the checkbox cell
+                    if (cells[i].innerText.toLowerCase().indexOf(searchValue) !== -1) {
+                        match = true;
+                        break;
+                    }
+                }
                 row.style.display = match ? '' : 'none';
             });
         });

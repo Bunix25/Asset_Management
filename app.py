@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import csv
 
 app = Flask(__name__)
@@ -43,6 +43,24 @@ def view_assets():
         for row in reader:
             assets.append(row)
     return render_template('view_assets.html', assets=assets)
+
+@app.route('/delete', methods=['POST'])
+def delete_assets():
+    ids_to_delete = request.form.getlist('delete')
+    if ids_to_delete:
+        with open(CSV_FILE, 'r') as file:
+            reader = csv.reader(file)
+            rows = list(reader)
+        
+        headers = rows[0]
+        rows = [row for row in rows if row[0] not in ids_to_delete]
+
+        with open(CSV_FILE, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(headers)
+            writer.writerows(rows)
+    
+    return redirect('/view')
 
 if __name__ == '__main__':
     app.run(debug=True)

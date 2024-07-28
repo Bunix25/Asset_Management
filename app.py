@@ -14,7 +14,7 @@ app = Flask(__name__)
 CSV_FILE = 'assets.csv'
 
 # Set the API key directly (for testing purposes)
-api_key = "HERE!!!!!!"
+api_key = "HERE!!!!!!!"
 print(f"API Key: {api_key}")  # Print the API key to verify
 
 # Instantiate the OpenAI client

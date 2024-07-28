@@ -1,23 +1,64 @@
-001,Computer,slava_comp,slava,RAE,Ottawa,TYHGF,008845-or,YHSG-SJSTD-SJHS-SHSDG-736SH,2023-03-15,2024-07-15,MAC,M1,8 GB
-0022,Computer,slava2243_comp,slava111,RAE1,Ottawa,TYHGF111,008845-or11,YHSG-SJSTD-SJHS-SHSDG-736SH11,2024-07-04,2024-07-22,MAC,M1,8 GB
-00133,Computer,slava_comp33,slava33,RAE33,Ottawa,TYHGF33,008845-or33,YHSG-SJSTD-SJHS-SHSDG-736SH33,2024-07-01,2026-10-21,MAC,M1,8 GBs33
-0021,Computer,alex_comp,alex,CS,Ottawa,Dell,Inspiron-15,123456789,2023-03-15,2024-07-15,Windows,Intel i5,8 GB
-0012,Computer,jane_laptop,jane,Math,Toronto,HP,Envy-13,987654321,2024-07-24,2025-07-09,Windows,Intel i7,16 GB
-003,Tablet,mike_tablet,mike,Biology,Montreal,Apple,iPad-Pro,111213141,2024-08-15,2025-08-15,iOS,A12,4 GB
-004,Computer,lucas_pc,lucas,Physics,Vancouver,Asus,VivoBook,151617181,2023-11-20,2024-11-20,Windows,AMD Ryzen 5,8 GB
-005,Laptop,emma_laptop,emma,Chemistry,Calgary,Lenovo,ThinkPad-X1,192021222,2023-06-10,2024-06-10,Windows,Intel i5,8 GB
-006,Tablet,olivia_tablet,olivia,History,Edmonton,Samsung,Galaxy-Tab-S7,232425262,2024-05-01,2025-05-01,Android,Exynos 990,6 GB
-007,Computer,liam_desktop,liam,Geography,Ottawa,HP,Omen-30L,272829303,2024-09-30,2025-09-30,Windows,Intel i9,32 GB
-008,Computer,noah_pc,noah,Economics,Winnipeg,Dell,XPS-13,313233343,2024-01-25,2025-01-25,Windows,Intel i7,16 GB
-009,Laptop,ava_laptop,ava,Engineering,Halifax,Acer,Swift-3,353637383,2023-12-15,2024-12-15,Windows,AMD Ryzen 7,8 GB
-010,Tablet,william_tablet,william,Art,Victoria,Apple,iPad-Air,394041424,2024-03-05,2025-03-05,iOS,A14,4 GB
-010,Smartphone,sam_phone,sam,Math,Calgary,Samsung,Galaxy-S20,121212121,2023-04-01,2024-04-01,Android,Exynos 990,8 GB
-011,Computer,rita_pc,rita,History,Edmonton,HP,Pavilion-15,232323232,2023-02-12,2024-02-12,Windows,Intel i5,8 GB
-012,Laptop,john_laptop,john,Chemistry,Vancouver,Lenovo,Yoga-920,343434343,2024-06-15,2025-06-15,Windows,Intel i7,16 GB
-013,Tablet,anna_tablet,anna,Biology,Montreal,Apple,iPad-Mini,454545454,2023-07-20,2024-07-20,iOS,A14,4 GB
-014,Computer,mark_desktop,mark,Physics,Toronto,Asus,ROG-Strix,565656565,2023-09-18,2024-09-18,Windows,AMD Ryzen 7,32 GB
-015,Smartphone,lucy_phone,lucy,Economics,Ottawa,Apple,iPhone-12,676767676,2023-10-22,2024-10-22,iOS,A14,4 GB
-016,Computer,nick_pc,nick,CS,Halifax,Dell,Alienware,787878787,2024-01-05,2025-01-05,Windows,Intel i9,64 GB
-017,Laptop,zoe_laptop,zoe,Art,Victoria,Acer,Aspire-5,898989898,2023-03-30,2024-03-30,Windows,AMD Ryzen 5,8 GB
-018,Tablet,liam_tablet,liam,Geography,Winnipeg,Samsung,Galaxy-Tab-S6,909090909,2024-02-28,2025-02-28,Android,Exynos 9820,6 GB
-019,Smartphone,oliver_phone,oliver,Engineering,Ottawa,Google,Pixel-5,101010101,2023-08-11,2024-08-11,Android,Snapdragon 765G,8 GB
+001,Computer,slava_comp11,slava,History,Ottawa,HP,21222,122233333,2024-07-26,2024-07-31,Windows,intel,8 GB
+002,Computer,Tim-computer,Tim,History,Ottawa,HP,55,73736373ss,2024-07-06,2027-10-12,Windows,intel,8 GB
+003,Computer,Sarah-computer,Sarah,Math,Montreal,DELL,56,74646364tt,2024-08-07,2027-11-13,Windows,intel,16 GB
+004,Computer,John-computer,John,Science,Toronto,LENOVO,57,75556365uu,2024-09-08,2027-12-14,Windows,amd,8 GB
+005,Computer,Emily-computer,Emily,Engineering,Vancouver,ASUS,58,76466366vv,2024-10-09,2028-01-15,Windows,intel,32 GB
+006,Computer,Mike-computer,Mike,Art,Calgary,HP,59,77376367ww,2024-11-10,2028-02-16,Windows,amd,16 GB
+007,Computer,Alice-computer,Alice,Music,Edmonton,DELL,60,78286368xx,2024-12-11,2028-03-17,Windows,intel,8 GB
+008,Computer,David-computer,David,Physics,Winnipeg,LENOVO,61,79196369yy,2025-01-12,2028-04-18,Windows,amd,16 GB
+009,Computer,Laura-computer,Laura,Chemistry,Halifax,ASUS,62,80006370zz,2025-02-13,2028-05-19,Windows,intel,32 GB
+010,Computer,James-computer,James,Biology,Quebec,HP,63,80916371aa,2025-03-14,2028-06-20,Windows,amd,8 GB
+011,Computer,Emma-computer,Emma,Geography,Ottawa,DELL,64,81826372bb,2025-04-15,2028-07-21,Windows,intel,16 GB
+012,Computer,Chris-computer,Chris,Literature,Montreal,LENOVO,65,82736373cc,2025-05-16,2028-08-22,Windows,amd,32 GB
+013,Computer,Anna-computer,Anna,Philosophy,Toronto,ASUS,66,83646374dd,2025-06-17,2028-09-23,Windows,intel,8 GB
+014,Computer,Tom-computer,Tom,Sociology,Vancouver,HP,67,84556375ee,2025-07-18,2028-10-24,Windows,amd,16 GB
+015,Computer,Mary-computer,Mary,Psychology,Calgary,DELL,68,85466376ff,2025-08-19,2028-11-25,Windows,intel,32 GB
+016,Computer,Peter-computer,Peter,Economics,Edmonton,LENOVO,69,86376377gg,2025-09-20,2028-12-26,Windows,amd,8 GB
+017,Computer,Linda-computer,Linda,Political Science,Winnipeg,ASUS,70,87286378hh,2025-10-21,2029-01-27,Windows,intel,16 GB
+018,Computer,Mark-computer,Mark,Anthropology,Halifax,HP,71,88196379ii,2025-11-22,2029-02-28,Windows,amd,32 GB
+019,Computer,Kate-computer,Kate,Education,Quebec,DELL,72,89106380jj,2025-12-23,2029-03-29,Windows,intel,8 GB
+020,Computer,Paul-computer,Paul,Law,Ottawa,LENOVO,73,90016381kk,2026-01-24,2029-04-30,Windows,amd,16 GB
+021,Computer,Nina-computer,Nina,Medicine,Montreal,ASUS,74,91026382ll,2026-02-25,2029-05-31,Windows,intel,32 GB
+022,Computer,Jack-computer,Jack,Architecture,Toronto,HP,75,92036383mm,2026-03-26,2029-06-01,Windows,amd,8 GB
+023,Mac,Steve-mac,Steve,Design,Ottawa,Apple,76,93046384nn,2026-04-27,2029-07-02,macOS,apple,16 GB
+024,Server,Lisa-server,Lisa,IT,Toronto,Dell,77,94056385oo,2026-05-28,2029-08-03,Linux,intel,64 GB
+025,Linux,Alex-linux,Alex,Development,Vancouver,HP,78,95066386pp,2026-06-29,2029-09-04,Linux,amd,32 GB
+026,Switch,Bob-switch,Bob,Networking,Calgary,Cisco,79,96076387qq,2026-07-30,2029-10-05,IOS,cisco,8 GB
+027,Mac,Ella-mac,Ella,Graphics,Montreal,Apple,80,97086388rr,2026-08-31,2029-11-06,macOS,apple,16 GB
+028,Server,Mike-server,Mike,Data Center,Winnipeg,IBM,81,98096389ss,2026-09-01,2029-12-07,Linux,intel,128 GB
+029,Linux,Kate-linux,Kate,Research,Edmonton,Lenovo,82,99106390tt,2026-10-02,2030-01-08,Linux,amd,32 GB
+030,Switch,Tom-switch,Tom,Infrastructure,Halifax,Juniper,83,100116391uu,2026-11-03,2030-02-09,JunOS,juniper,16 GB
+031,Mac,John-mac,John,Video Editing,Quebec,Apple,84,101126392vv,2026-12-04,2030-03-10,macOS,apple,32 GB
+032,Server,Sara-server,Sara,Database,Ottawa,Dell,85,102136393ww,2027-01-05,2030-04-11,Linux,intel,64 GB
+033,Linux,Paul-linux,Paul,Engineering,Montreal,HP,86,103146394xx,2027-02-06,2030-05-12,Linux,amd,16 GB
+034,Switch,Anna-switch,Anna,Telecom,Toronto,Cisco,87,104156395yy,2027-03-07,2030-06-13,IOS,cisco,8 GB
+035,Mac,Emily-mac,Emily,Photography,Vancouver,Apple,88,105166396zz,2027-04-08,2030-07-14,macOS,apple,16 GB
+036,Server,Jack-server,Jack,Web Hosting,Calgary,IBM,89,106176397aa,2027-05-09,2030-08-15,Linux,intel,128 GB
+037,Linux,Grace-linux,Grace,Machine Learning,Edmonton,Lenovo,90,107186398bb,2027-06-10,2030-09-16,Linux,amd,32 GB
+038,Switch,Nick-switch,Nick,Enterprise,Winnipeg,Juniper,91,108196399cc,2027-07-11,2030-10-17,JunOS,juniper,16 GB
+039,Mac,Dave-mac,Dave,Animation,Halifax,Apple,92,109206400dd,2027-08-12,2030-11-18,macOS,apple,32 GB
+040,Server,Alice-server,Alice,Cloud,Quebec,Dell,93,110216401ee,2027-09-13,2030-12-19,Linux,intel,64 GB
+041,Linux,Sam-linux,Sam,Security,Ottawa,HP,94,111226402ff,2027-10-14,2031-01-20,Linux,amd,16 GB
+042,Switch,Luke-switch,Luke,Routing,Montreal,Cisco,95,112236403gg,2027-11-15,2031-02-21,IOS,cisco,8 GB
+043,Mac,Liam-mac,Liam,Film Editing,Victoria,Apple,96,113246404hh,2027-12-16,2031-03-22,macOS,apple,16 GB
+044,Server,Mia-server,Mia,Analytics,Ottawa,IBM,97,114256405ii,2028-01-17,2031-04-23,Linux,intel,128 GB
+045,Linux,Noah-linux,Noah,Development,Toronto,HP,98,115266406jj,2028-02-18,2031-05-24,Linux,amd,32 GB
+046,Switch,Sophia-switch,Sophia,Networking,Calgary,Cisco,99,116276407kk,2028-03-19,2031-06-25,IOS,cisco,8 GB
+047,Mac,Olivia-mac,Olivia,Graphic Design,Vancouver,Apple,100,117286408ll,2028-04-20,2031-07-26,macOS,apple,32 GB
+048,Server,Lucas-server,Lucas,Database,Edmonton,Dell,101,118296409mm,2028-05-21,2031-08-27,Linux,intel,64 GB
+049,Linux,Amelia-linux,Amelia,Research,Montreal,Lenovo,102,119306410nn,2028-06-22,2031-09-28,Linux,amd,16 GB
+050,Switch,Ethan-switch,Ethan,IT Support,Halifax,Juniper,103,120316411oo,2028-07-23,2031-10-29,JunOS,juniper,16 GB
+051,Mac,Ava-mac,Ava,Music Production,Winnipeg,Apple,104,121326412pp,2028-08-24,2031-11-30,macOS,apple,8 GB
+052,Server,Mason-server,Mason,Cloud Services,Victoria,IBM,105,122336413qq,2028-09-25,2032-01-01,Linux,intel,128 GB
+053,Linux,Harper-linux,Harper,AI Development,Ottawa,HP,106,123346414rr,2028-10-26,2032-02-02,Linux,amd,32 GB
+054,Switch,James-switch,James,Telecommunications,Toronto,Cisco,107,124356415ss,2028-11-27,2032-03-03,IOS,cisco,8 GB
+055,Mac,Isabella-mac,Isabella,Photography,Vancouver,Apple,108,125366416tt,2028-12-28,2032-04-04,macOS,apple,16 GB
+056,Server,Elijah-server,Elijah,Big Data,Calgary,Dell,109,126376417uu,2029-01-29,2032-05-05,Linux,intel,64 GB
+057,Linux,Charlotte-linux,Charlotte,Machine Learning,Edmonton,Lenovo,110,127386418vv,2029-02-30,2032-06-06,Linux,amd,16 GB
+058,Switch,Michael-switch,Michael,Enterprise,Montreal,Juniper,111,128396419ww,2029-03-31,2032-07-07,JunOS,juniper,16 GB
+059,Mac,Evelyn-mac,Evelyn,Animation,Halifax,Apple,112,129406420xx,2029-04-01,2032-08-08,macOS,apple,32 GB
+060,Server,Alexander-server,Alexander,Web Hosting,Winnipeg,IBM,113,130416421yy,2029-05-02,2032-09-09,Linux,intel,128 GB
+061,Linux,Abigail-linux,Abigail,Security,Victoria,HP,114,131426422zz,2029-06-03,2032-10-10,Linux,amd,16 GB
+062,Switch,Daniel-switch,Daniel,Routing,Ottawa,Cisco,115,132436423aa,2029-07-04,2032-11-11,IOS,cisco,8 GB
+00133,Computer,slava_comp12112,slava111,History,Ottawa,HP,008845-or22,YHSG-SJS,2024-07-25,2024-12-07,Windows,intel,8 GB
+00211,Computer,slava_comp11111,slava1111,History,Ottawa,HP,008845-or11,1111111,2024-07-18,2024-12-26,Windows,M11,8 GB
